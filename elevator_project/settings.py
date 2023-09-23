@@ -84,10 +84,10 @@ WSGI_APPLICATION = 'elevator_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': '1234',
+        'PASSWORD': 'tanu2212',
         'HOST': 'localhost',
         'PORT': '5432'
     }
