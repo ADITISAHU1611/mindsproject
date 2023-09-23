@@ -53,7 +53,7 @@ The Elevator System uses a PostgreSQL database to store the elevator and request
 5. Saves user requests to the list of requests for a elevator
 6. Mark an elevator as not working or in maintenance
 7. Open/close the door.
-8. 
+   
 ## API Contracts
 
 The Elevator System exposes the following APIs:
