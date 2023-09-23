@@ -67,8 +67,9 @@ The Elevator System exposes the following APIs:
 - `POST /api/elevator/call/`: Call elevator from an external button.
 - `POST /api/elevator/{elevator_id}/door_action/`: Sets the operational status of an elevator.
 
-I have also attached the snapshot of postman api collection.
+I have also attached the snapshot of postman api collection with django admin.
 
+![post](https://github.com/ADITISAHU1611/mindsproject/assets/92028980/51ac674a-1f96-4b7c-9cf1-d8e32fbabc44)
 
 ![django](https://github.com/ADITISAHU1611/mindsproject/assets/92028980/4b474e64-cf5b-4745-ab39-78422b0b5054)
 
