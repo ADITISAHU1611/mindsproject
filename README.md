@@ -9,6 +9,31 @@ The Elevator Control System provides a web-based interface for simulating elevat
 2. Select a destination floor.
 3. Observe the elevator's movement.
 
+# Each elevator has below capabilities:
+● Move Up and Down
+● Open and Close Door
+● Start and Stop Running
+● Display Current Status
+● Decide whether to move up or down, based on a list of requests from users.
+
+# Elevator System takes care of:
+● Decides which lift to associate which floor.
+● Marks which elevator is available or busy.
+● Can mark which elevator is operational and which is not.
+
+# Assumptions:
+● Number of elevators in the system will be defined by the API to intialise the elevator system
+● Elevator System has got only one button per floor.
+● So if there are a total of 5 floors, there will be 5 buttons per floor.
+● Note that, this doesn't not mimic real world, when you would have a total of 10 buttons for 5
+floors ( one for up and one for down)
+● Once the elevator reaches its called point, then based on what floor is requested, it moves
+either up or down.
+● Assume the API calls which make the elevator go up/down or stop will reflect immediately.
+When the API to go up is called, you can assume that the elevator has already reached the
+above floor.
+● The system has to assign the most optimal elevator to the user according to their request.
+
 ## Architecture
 
 The Elevator System follows a client-server architecture with a Django server as the backend and a client application (not provided) interacting with the server via RESTful APIs. The Django REST Framework (DRF) is used to develop the APIs, and PostgreSQL is used as the database.
@@ -20,6 +45,15 @@ The `api's` directory contains the Django views for handling various API endpoin
 
 The Elevator System uses a PostgreSQL database to store the elevator and request data. The primary models are `Elevator` and `Request`, with a one-to-many relationship where an elevator can have multiple requests. The `Elevator` model includes fields such as `current_floor`, `current_direction`, `is_operational`, and `is_open`, while the `Request` model includes fields such as `elevator`, `floor`, and `status`.
 
+# API’s required:
+1. Initialise the elevator system to create ‘n’ elevators in the system
+2. Fetch all requests for a given elevator
+3. Fetch the next destination floor for a given elevator
+4. Fetch if the elevator is moving up or down currently
+5. Saves user requests to the list of requests for a elevator
+6. Mark an elevator as not working or in maintenance
+7. Open/close the door.
+8. 
 ## API Contracts
 
 The Elevator System exposes the following APIs:
@@ -35,13 +69,7 @@ The Elevator System exposes the following APIs:
 
 I have also attached the snapshot of postman api collection.
 
-## Libraries and Plugins Used
 
-The Elevator System uses the following libraries and plugins:
-
-- Django: The web framework used to develop the server-side application.
-- Django REST Framework: A powerful and flexible toolkit for building Web APIs.
-- PostgreSQL: The database management system used for storing elevator and request data.
-- Other dependencies specified in the `requirements.txt` file.
+![django](https://github.com/ADITISAHU1611/mindsproject/assets/92028980/4b474e64-cf5b-4745-ab39-78422b0b5054)
 
 
