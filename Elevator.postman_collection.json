@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "45d599a9-55b2-4eea-8486-c373ace7b855",
+		"_postman_id": "434c0e2d-411f-4873-a48f-d197b2645535",
 		"name": "Elevator",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "5217589"
+		"_exporter_id": "21482787"
 	},
 	"item": [
 		{
@@ -21,11 +21,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}/elevator/initialize/",
+					"raw": "{{host}}/api/elevator/initialize/",
 					"host": [
 						"{{host}}"
 					],
 					"path": [
+						"api",
 						"elevator",
 						"initialize",
 						""
@@ -124,11 +125,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}/elevator/1/save_request/",
+					"raw": "{{host}}/api/elevator/1/save_request/",
 					"host": [
 						"{{host}}"
 					],
 					"path": [
+						"api",
 						"elevator",
 						"1",
 						"save_request",
@@ -229,11 +231,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}/elevator/call/",
+					"raw": "{{host}}/api/elevator/call/",
 					"host": [
 						"{{host}}"
 					],
 					"path": [
+						"api",
 						"elevator",
 						"call",
 						""
@@ -335,11 +338,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}/elevator/1/next_destination/",
+					"raw": "{{host}}/api/elevator/1/next_destination/",
 					"host": [
 						"{{host}}"
 					],
 					"path": [
+						"api",
 						"elevator",
 						"1",
 						"next_destination",
@@ -353,15 +357,6 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "{{host}}/elevator/1/next_destination/",
 							"host": [
@@ -443,11 +438,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}/elevator/1/requests/",
+					"raw": "{{host}}/api/elevator/1/requests/",
 					"host": [
 						"{{host}}"
 					],
 					"path": [
+						"api",
 						"elevator",
 						"1",
 						"requests",
@@ -461,15 +457,6 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "{{host}}/elevator/1/requests/",
 							"host": [
@@ -551,11 +538,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}/elevator/1/current_direction/",
+					"raw": "{{host}}/api/elevator/1/current_direction/",
 					"host": [
 						"{{host}}"
 					],
 					"path": [
+						"api",
 						"elevator",
 						"1",
 						"current_direction",
@@ -569,15 +557,6 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"floor\":10\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
 							"raw": "{{host}}/elevator/1/current_direction/",
 							"host": [
@@ -656,11 +635,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}/elevator/1/door_action/",
+					"raw": "{{host}}/api/elevator/1/door_action/",
 					"host": [
 						"{{host}}"
 					],
 					"path": [
+						"api",
 						"elevator",
 						"1",
 						"door_action",
@@ -761,11 +741,12 @@
 					}
 				},
 				"url": {
-					"raw": "{{host}}/elevator/1/set_operational/",
+					"raw": "{{host}}/api/elevator/1/set_operational/",
 					"host": [
 						"{{host}}"
 					],
 					"path": [
+						"api",
 						"elevator",
 						"1",
 						"set_operational",
