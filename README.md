@@ -43,6 +43,5 @@ The Elevator System uses the following libraries and plugins:
 - Django REST Framework: A powerful and flexible toolkit for building Web APIs.
 - PostgreSQL: The database management system used for storing elevator and request data.
 - Other dependencies specified in the `requirements.txt` file.
-  ![post](https://github.com/ADITISAHU1611/mindsproject/assets/92028980/e742c70b-ee04-4b8c-afc4-7fe3168c726a)
 
 
